@@ -1,0 +1,125 @@
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    width: fit-content;
+}
+
+input{
+    outline: none;
+    color: inherit;
+    background: transparent;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    background-color: #EAEAEA;
+    width: 100vw;
+    height: 80vh;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-div);
+    background-color: #297C6B;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 25px;
+    margin: 20vh auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+body > div > h1 {
+    font-size: var(--fs-l);
+    text-align: center;
+}
+
+body > div > p {
+    font-size: var(--fs-s);
+    width: var(--w);
+}
+
+body > div > button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: var(--fs-m);
+    margin-top: 20px;
+    padding: var(--padding-btn);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 360px) {
+    :root{
+        --fs-l: 32px;
+        --fs-m: 14px;
+        --fs-s: 12px;
+
+        --w: 32ch;
+
+        --padding-div: 50px 0;
+        --padding-btn: 10px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    :root{
+        --fs-l: 32px;
+        --fs-m: 14px;
+        --fs-s: 12px;
+
+        --w: 32ch;
+
+        --padding-div: 50px 0;
+        --padding-btn: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root{
+        --fs-l: 42px;
+        --fs-m: 18px;
+        --fs-s: 14px;
+
+        --w: 50ch;
+
+        --padding-div: 80px 30px;
+        --padding-btn: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    :root{
+        --fs-l: 52px;
+        --fs-m: 18px;
+        --fs-s: 14px;
+
+        --w: 70ch;
+
+        --padding: 50px;
+        --padding-btn: 20px;
+    }
+}

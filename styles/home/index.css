@@ -1,0 +1,11 @@
+@import "./hero.css";
+@import "./weUnderstand.css";
+@import "./services.css";
+@import "./footer.css";
+@import "./lisence.css";
+@import "./video.css";
+
+section{
+    /* min-height: 100vh; */
+    width: 100vw;
+}

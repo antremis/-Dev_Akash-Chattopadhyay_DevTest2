@@ -1,0 +1,25 @@
+#lisence {
+    display: flex;
+    flex-direction: var(--fd-lisence);
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-lisence);
+    padding:  var(--padding-lisence);
+    color: #757575;
+    background-color: var(--clr-faded);
+    font-size: var(--fs-lisence);
+    line-height: var(--lh-lisence);
+}
+
+#lisence > p > span {
+    cursor: pointer;
+}
+
+#lisence > p > span:hover {
+    transition: 0.1s linear all;
+    color: var(--clr-background-dark);
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+}

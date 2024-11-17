@@ -1,0 +1,11 @@
+@import "./vars.css";
+@import "./reset.css";
+@import "./media.css";
+
+body{
+    background-color: var(--clr-background-white);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* overflow-x: clip; */
+    width: 100vw;
+}

@@ -1,0 +1,361 @@
+#hero{
+    position: relative;
+    height: var(--h-hero-section);
+    margin-bottom: 10px;
+    background-image: var(--bgimg);
+    background-size: cover;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+#hero nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--align-nav);
+    padding: var(--padding-nav);
+}
+
+#hero nav img{
+    width: var(--imgw-logo);
+}
+
+#hero nav ul{
+    display: flex;
+    gap: var(--gap-nav-items);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: var(--fs-s1);
+    color: rgba(255, 255, 255, 0.70);
+    list-style: none;
+    margin: var(--margin-nav-comp);
+    line-height: 16px;
+    cursor: pointer;
+}
+
+#hero nav ul > li{
+    position: relative;
+}
+
+#hero nav ul > li:not(.cta):before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transition: 0.2s linear all;
+    transform-origin: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: 0.2s linear all;
+    -moz-transition: 0.2s linear all;
+    -ms-transition: 0.2s linear all;
+    -o-transition: 0.2s linear all;
+}
+
+#hero nav ul li.active{
+    color: white;
+    margin-right: var(--margin-nav-item-comp);
+}
+
+#hero nav ul li.active::before{
+    background-color: white;
+}
+
+#hero nav ul li.active::before,
+#hero nav ul li:hover::before {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+#hero nav ul li.cta{
+    translate: 0 3px;
+    margin: var(--margin-nav-CTA-comp);
+}
+
+#hero nav ul li.cta span{
+    color: var(--clr-accent);
+}
+
+#hero nav ul li.newline{
+    flex-basis: 100% !important;
+    height: 0 !important;
+    width: 100% !important;
+}
+
+#hero nav ul li > #hamburger{
+    width: var(--imgw-hamburger);
+    margin: var(--margin-nav-hamburger-comp);
+}
+
+#hero-info{
+    display: flex;
+    color: white;
+    padding: var(--padding-hero-body);
+    justify-content: var(--align-form-content);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hero-info > .info {
+    padding: var(--padding-hero-info);
+    width: var(--w-hero-info);
+}
+
+#hero-info > .info h1:first-of-type {
+    color: white;
+}
+
+#hero-info > .info h1 {
+    text-align: var(--align-hero-title);
+    font-size: var(--fs-l2);
+    line-height: var(--lh-hero-info-title);
+    position: relative;
+}
+
+/* #hero-info > .info h1:first-of-type::after{
+    content: 'GET AN';
+    position: absolute;
+    inset: 0;
+    color: transparent;
+    font-size: var(--fs-l2);
+    -webkit-text-stroke: 2px black;
+    mix-blend-mode: difference;
+} */
+
+#hero-info > .info p {
+    font-size: var(--fs-hero-info-text);
+    margin: var(--margin-hero-info-text-comp);
+    line-height: var(--lh-hero-info-text);
+    text-align: var(--align-hero-text);
+    color: var(--clr-hero-info-text);
+}
+
+#hero-info > form {
+    background-color: var(--clr-background);
+    width: var(--w-form);
+    /* height: var(--h-form); */
+    padding: var(--padding-form);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#hero-info > form > h2 {
+    font-size: var(--fs-m2);
+}
+
+#hero-info > form > div {
+    display: flex;
+    gap: var(--gap-form-items);
+    flex-wrap: wrap;
+    margin: var(--margin-form-input-items);
+}
+
+#hero-info > form > div > *{
+    border:  1px solid rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    height: 48px;
+    font-size: 16px;
+    padding: 14px 16px;
+    color: rgba(255, 255, 255, 0.7);
+    width: var(--w-hero-form-fields);
+    position: relative;
+}
+
+#hero-info > form > div > div.input > label,
+#hero-info > form > div > div.select > div.input > label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 14px 16px;
+    transform-origin: 0 50%;
+    background-color: transparent;
+    transition: 0.1s linear all;
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+}
+
+#hero-info > form > div > div.input > div.error {
+    display: none;
+    position: absolute;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: var(--clr-red);
+    z-index: 1;
+    padding: 12px 16px;
+    left: 50%;
+    top: calc(100% + 11px);
+    width: 100%;
+    color: white !important;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#hero-info > form > div > div.input > div.error::before {
+    content: '';
+    position: absolute;
+    font-size: 9px;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-bottom: 1em solid var(--clr-red);
+    left: 50%;
+    bottom: 100%;
+    translate: -50% 0;
+}
+
+#hero-info > form > div > *:focus-within,
+#hero-info > form > div > *:focus,
+#hero-info > form > div > *:has(input:not(:placeholder-shown)){
+    border:  1px solid white;
+    color: white;
+}
+
+#hero-info > form > div > *:focus-within label,
+#hero-info > form > div > *:focus label,
+#hero-info > form > div > * input:not(:placeholder-shown) ~ label {
+    top: -10px !important;
+    left: 10px !important;
+    padding: 0px 5px !important;
+    height: fit-content !important;
+    width: fit-content !important;
+    transform: scale(0.82);
+    background-color: var(--clr-background) !important;
+    -webkit-transform: scale(0.82);
+    -moz-transform: scale(0.82);
+    -ms-transform: scale(0.82);
+    -o-transform: scale(0.82);
+}
+
+#hero-info > form > div > *:has(input:required:invalid:not(:placeholder-shown)){
+    color: var(--clr-red) !important;
+    border: 1px solid var(--clr-red) !important;
+}
+
+#hero-info > form > div > *:has(input:required:invalid:not(:placeholder-shown)) > div.error {
+    display: block;
+}
+
+#hero-info > form > div > .select{
+    flex-basis: 100%;
+    padding: 14px 12px;
+    margin: var(--margin-form-select-comp);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+#hero-info > form > div > .select .input,
+#hero-info > form > div > .select input{
+    width: 100%;
+}
+
+#hero-info > form > div > .select > img {
+    width: 9px;
+    height: 5px;
+}
+
+#hero-info > form > div > .select > input {
+    width: 100%;
+}
+
+#hero-info > form > div > .select > .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    max-height: calc(56px * 5);
+    background-color: var(--clr-background);
+    overflow-y: auto;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+#hero-info > form > div > .select > .options > .option {
+    padding: inherit;
+    cursor: pointer;
+    background-color: var(--clr-background-dark);
+    padding: 14px 16px;
+    margin-top: 10px;
+}
+
+#hero-info > form > div > .select > .options > .option:nth-child(2n){
+    background-color: var(--clr-accent);
+}
+
+#hero-info > form > div > .select > input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#hero-info > form > div > .select > input:focus::placeholder,
+#hero-info > form > div > .select > input:focus-within::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+#hero-info > form > div > .select:has(input:focus) > .options,
+#hero-info > form > div > .select:has(input:focus-within) > .options{
+    display: block;
+}
+
+#hero-info > form > div > .select > option {
+    background-color: var(--clr-accent);
+}
+
+#hero-info > form > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    height: 56px;
+    width: var(--w-form-btn);
+    background-color: var(--clr-accent);
+    color: white;
+    font-size: var(--fs-s2);
+    font-weight: 800;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#hero-info > form > button:focus-within,
+#hero-info > form > button:focus{
+    outline: 1px solid black;
+    background-color: #35BB9C;
+}
+
+#hero-info > form > button:active{
+    outline: none;
+}

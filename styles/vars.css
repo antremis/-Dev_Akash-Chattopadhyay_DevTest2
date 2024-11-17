@@ -1,0 +1,12 @@
+:root{
+    --clr-accent: #5BC8AF;
+    --clr-background: #297C6B;
+    --clr-background-dark: #194D44;
+    --clr-text: #333;
+    --clr-faded: #EAEAEA;
+    --clr-red: #FF7777;
+
+    --bp-mobile: 360px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1440px;
+}

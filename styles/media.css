@@ -1,0 +1,446 @@
+@media only screen and (min-width: 0px) {
+  /* Mobile styles */
+
+  :root{
+    --bgimg: url("../../assets/home/hero/background-mobile.png");
+    --bgimg-footer: url("../../assets/home/footer/background-mobile.png");
+
+    --padding-nav: 12px 16px 43px;
+    --padding-hero-body: 0 16px;
+    --padding-wu-body: 0 16px;
+    --padding-service-body: 87px 16px 80px;
+    --padding-footer: 80px 15px;
+    --padding-lisence: 34px 31px 34px 32px;
+    --padding-hero-info: 0px;
+    --padding-form: 36px 16px 56px;
+    --padding-wu-carousel-item: 143px 35px 52px 29px;
+
+    --fd-lisence: column;
+
+    --clr-hero-info-text: rgba(255, 255, 255, 0.8);
+    --clr-background-white: white;
+    --clr-bp: 100%;
+
+    --align-nav: center;
+    --align-hero-title: center;
+    --align-form-content: center;
+    --align-hero-text: center;
+    --align-footer-title: center;
+
+    --imgw-logo: 157px;
+    --imgw-hamburger: 20px;
+
+    --position-wu-carousel-img: absolute;
+
+    --gridr-wu-text: 0.8fr 1fr 0.59fr 0.2fr;
+    --gridr-service-text: 0.54fr 1fr 1fr;
+
+    --gridc-service-services: 1fr;
+
+    --w-form: 472px;
+    --w-form-input-s: 200px;
+    --w-form-btn: 100%;
+    --w-hero-info: auto;
+    --w-carousel-item-quotes: 60px;
+    --w-carousel-item-img: 180px;
+    --w-hero-form-fields: 100%;
+    --w-service-services-item: 328px;
+    --w-footer-logo: 226px;
+    --w-footer-play: 98px;
+    --w-carousel: 328px;
+    --w-carousel-item-text: 328px;
+
+    --pr-carousel-item-quotes: 28px;
+
+    --pl-carousel-item-img: 32px;
+    --pl-footer-play: 50%;
+
+    --pt-carousel-item-quotes: 73px;
+    --pt-carousel-item-img: -60px;
+
+    --pb-footer-play: 195px;
+    --pb-footer-logo: 23px;
+
+    --h-hero-section: 1062px;
+    --h-form: 449px;
+    --h-form-input: 48px;
+    --h-footer-section: 900px;
+
+    --br-wu-carousel-item: 8px;
+    --br-wu-carousel-image: 10px 10px 0px 0;
+    
+    --fs-s1: 14px;
+    --fs-s2: 18px;
+    --fs-m1: 24px;
+    --fs-m2: 24px;
+    --fs-m3: 24px;
+    --fs-l2: 36px;
+    --fs-hero-info-text: 14px;
+    --fs-wu-carousel-item-title: 18px;
+    --fs-wu-carousel-item-text: 14px;
+    --fs-footer-title: 36px;
+    --fs-footer-subtitle: 18px;
+    --fs-footer-text: 14px;
+    --fs-lisence: 12px;
+    --fs-footer-play-icon: 10px;
+
+    --gap-nav-items: 10px 31px;
+    --gap-form-items: 16px;
+    --gap-wu-carousel-item-text: 14px;
+    --gap-wu-text: 25px;
+    --gap-service-text: 40px;
+    --gap-service-services: 16px;
+    --gap-footer-text-block: 18px;
+    --gap-footer-text-inline: 17px;
+    --gap-lisence: 15px;
+
+    --underline-size-nav-item: 1px;
+    
+    --margin-nav-comp: 0;
+    --margin-nav-item-comp: 0;
+    --margin-nav-CTA-comp: 0 -1px 0 12px;
+    --margin-nav-hamburger-comp: 4px 0 0 0;
+    --margin-hero-info: 0 50px 0 0;
+    --margin-hero-info-text-comp: 13px 0 15px 2px;
+    --margin-form-input-items: 38px 0 41px;
+    --margin-form-select-comp: -5px 0 0 0;
+    --margin-subtitle: 0 0 27px -1px;
+    --margin-wu-text: 0 2px 0 0;
+    --margin-wu-text-comp: -10px 0 0 0;
+    --margin-wu-carousel: 137px auto 0;
+    --margin-wu-carousel-item-text-comp: 0 0 0 3px;
+    --margin-wu-text-btn: 2px 0 0 0;
+    --margin-service-text: 0 0 63px 0;
+    --margin-footer-title: 0 0 35px 0;
+    --margin-footer-checkmark-1-comp: 7px 0 0 0;
+    --margin-footer-checkmark-2-comp: 7px 0 0 0;
+    --margin-footer-checkmark-3-comp: 5px 0 0 0;
+    --margin-footer-play-icon-comp: 2px 0 0 6px;
+    --margin-footer-text-inline-comp: 0;
+    --margin-footer-text-block-comp: -2px 0 0 0;
+    --margin-footer-play-icon-comp: 0;
+
+    --lh-hero-info-title: 44px;
+    --lh-hero-info-text: 24px;
+    --lh-text: 24px;
+    --lh-subtitle: 36px;
+    --lh-wu-carousel-item-title: 28px;
+    --lh-wu-carousel-item-text: 24px;
+    --lh-footer-title: 48px;
+    --lh-footer-subtitle: 24px;
+    --lh-footer-text: 24px;
+    --lh-lisence: 22px;
+
+    --scale-footer-play-glow: 1.37;
+  }
+
+  .tablet,
+  .desktop{
+    display: none !important;
+  }
+
+  .mobile{
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet styles */
+
+  :root{
+    --bgimg: url("../../assets/home/hero/background-tablet.png");
+    --bgimg-footer: url("../../assets/home/footer/background-tablet.png");
+
+    --padding-nav: 21px 3vw 20px 3.19vw;
+    --padding-hero-body: 52px 97px 100px;
+    --padding-wu-body: 100px 24px 0;
+    --padding-service-body: 102px 24px 100px;
+    --padding-footer: 102px 25px 0;
+    --padding-lisence: 5px 198px 32px 199px;
+    --padding-hero-info: 0px;
+    --padding-form: 51px 28px 56px;
+    --padding-wu-carousel-item: 30px 36px 33px 37px;
+
+    --fd-lisence: column;
+
+    --clr-hero-info-text: rgba(255, 255, 255, 0.8);
+    --clr-background-white: #f5f5f5;
+    --clr-bp: 815px;
+
+    --align-nav: flex-start;
+    --align-hero-title: center;
+    --align-form-content: center;
+    --align-hero-text: center;
+    --align-footer-title: center;
+
+    --imgw-logo: 227px;
+
+    --position-wu-carousel-img: static;
+
+    --gridr-wu-text: 1fr 0.5fr;
+    --gridr-service-text: 0.2fr 1fr;
+
+    --gridc-service-text: 1fr 1fr;
+    --gridc-service-services: 1fr 1fr;
+
+    --grid-column-service-text: span 2;
+
+    --w-form: 472px;
+    --w-form-input-s: 200px;
+    --w-form-btn: 221px;
+    --w-hero-info: auto;
+    --w-carousel-item-quotes: 40px;
+    --w-carousel-item-img: 198px;
+    --w-wu-imgset: 224px;
+    --w-hero-form-fields: calc(calc(100% - var(--gap-form-items)) / 2);
+    --w-service-services-item: 348px;
+    --w-footer-logo: 226px;
+    --w-footer-play: 155px;
+    --w-carousel: 720px;
+    --w-carousel-item-text: 496px;
+
+    --pl-footer-play: 50%;
+
+    --pr-carousel-item-quotes: 36px;
+
+    --pt-carousel-item-quotes: 18px;
+    --pt-carousel-item-img: -60px;
+
+    --pb-footer-play: 388px;
+    --pb-footer-logo: 48px;
+
+    --h-hero-section: 1090;
+    --h-form: 449px;
+    --h-form-input: 48px;
+    --h-footer-section: 1099px;
+
+    --br-wu-carousel-item: 0px 10px 10px 0px;
+    --br-wu-carousel-image: 10px 10px 0px 0;
+    
+    --fs-s1: 14px;
+    --fs-s2: 18px;
+    --fs-m1: 24px;
+    --fs-m2: 28px;
+    --fs-m3: 36px;
+    --fs-l2: 64px;
+    --fs-hero-info-text: 18px;
+    --fs-wu-carousel-item-title: 18px;
+    --fs-wu-carousel-item-text: 14px;
+    --fs-footer-title: 44px;
+    --fs-footer-subtitle: 24px;
+    --fs-footer-text: 18px;
+    --fs-lisence: 14px;
+    --fs-footer-play-icon: 17px;
+
+    --gap-nav-items: 10px 30px;
+    --gap-form-items: 16px;
+    --gap-wu-carousel-item-text: 8px;
+    --gap-wu-imgset: 24px;
+    --gap-wu-text: 23px 22px;
+    --gap-wu-carousel-item: 26px;
+    --gap-service-text: 30px 24px;
+    --gap-service-services: 24px;
+    --gap-footer-text-block: 26px;
+    --gap-footer-text-inline: 25px;
+    --gap-lisence: 9px;
+
+    --underline-size-nav-item: 0.5px;
+    
+    --margin-nav-comp: 9px 1px 0 0;
+    --margin-nav-item-comp: -1px;
+    --margin-nav-CTA-comp: 2px 0 0 0;
+    --margin-hero-info-text-comp: 13px 0px 3px -4px;
+    --margin-form-input-items: 34px 0 41px;
+    --margin-form-select-comp: 0;
+    --margin-subtitle: 0 0 30px -1px;
+    --margin-wu-imgset: 0 auto 65px;
+    --margin-wu-text: 0 3px 0 0;
+    --margin-wu-text-comp: 0 0 0 0;
+    --margin-wu-carousel: 79px auto 0;
+    --margin-wu-carousel-item-text-comp: 0;
+    --margin-wu-text-btn: 14px 0 0 0;
+    --margin-service-text: 0 0 62px 0;
+    --margin-footer-title: 0 0 63px 0;
+    --margin-footer-play-icon-comp: 0;
+    --margin-footer-text-block-comp: -15px 0 0 0;
+    --margin-footer-text-inline-comp: 0 0 0 22px;
+    --margin-footer-play-icon-comp: -1px 0 0 5px;
+    --margin-footer-checkmark-1-comp: 7px 0 0 0;
+    --margin-footer-checkmark-2-comp: 7px 0 0 0;
+    --margin-footer-checkmark-3-comp:10px 0 0 0;
+
+    --lh-hero-info-title: 72px;
+    --lh-hero-info-text: 28px;
+    --lh-text: 24px;
+    --lh-subtitle: 46px;
+    --lh-wu-carousel-item-title: 28px;
+    --lh-wu-carousel-item-text: 24px;
+    --lh-footer-title: 52px;
+    --lh-footer-subtitle: 32px;
+    --lh-footer-text: 28px;
+    --lh-lisence: 24px;
+
+    --scale-footer-play-glow: 1.37;
+  }
+
+  .mobile,
+  .desktop{
+    display: none !important;
+  }
+
+  .tablet{
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* Tablet styles */
+
+  :root{
+    --bgimg: url("../../assets/home/hero/background-desktop.png");
+    --bgimg-footer: url("../../assets/home/footer/background-desktop.png");
+
+    --imgw-logo: 226px;
+    --padding-nav: 20px 128px;
+    --padding-hero-body: 51px 128px;
+    --padding-wu-body: 69px 128px 70px;
+    --padding-service-body: 28px 128px 100px 127px;
+    --padding-footer: 94px 128px;
+    --padding-lisence: 38px 127px 38px 128px;
+    --padding-hero-info: 1px 0 0 0;
+    --padding-form: 51px 28px 56px;
+    --padding-wu-carousel-item: 60px 62px 29px 63px;
+
+    --fd-lisence: row;
+
+    --clr-hero-info-text: white;
+    --clr-background-white: #f5f5f5;
+    --clr-bp: 690px;
+
+    --align-nav: center;
+    --align-hero-title: left;
+    --align-form-content: space-between;
+    --align-hero-text: left;
+    --align-footer-title: left;
+
+    --imgw-logo: 227px;
+
+    --position-wu-carousel-img: static;
+
+    --gridr-wu-text: 1fr;
+    --gridr-service-text: 1fr;
+    
+    --gridc-service-text: 1fr 1fr 1fr;
+    --gridc-service-services: 1fr 1fr 1fr;
+
+    --grid-column-service-text: span 1;
+
+    --w-form: 472px;
+    --w-form-input-s: 200px;
+    --w-form-btn: 221px;
+    --w-hero-info: 52%;
+    --w-carousel-item-quotes: 60px;
+    --w-carousel-item-img: 269px;
+    --w-wu-imgset: 371px;
+    --w-hero-form-fields: calc(calc(100% - var(--gap-form-items)) / 2);
+    --w-service-services-item: 371px;
+    --w-footer-logo: 0;
+    --w-footer-play: 120px;
+    --w-footer-text: 470px;
+    --w-carousel: 980px;
+    --w-carousel-item-text: 675px;
+
+    --pr-carousel-item-quotes: 64px;
+
+    --pl-carousel-item-img: 32px;
+    --pl-footer-play: 75%;
+
+    --pt-carousel-item-quotes: 38px;
+    --pt-carousel-item-img: -60px;
+
+    --pb-footer-play: 262px;
+
+    --h-hero-section: 650px;
+    --h-form: 449px;
+    --h-form-input: 48px;
+    --h-wu-imgset: 180px;
+    --h-footer-section: 648px;
+
+    --br-wu-carousel-item: 0px 8px 8px 0px;
+    --br-wu-carousel-image: 10px 0px 0 10px;
+    
+    --fs-s1: 14px;
+    --fs-s2: 18px;
+    --fs-m1: 24px;
+    --fs-m2: 28px;
+    --fs-m3: 36px;
+    --fs-l2: 64px;
+    --fs-hero-info-text: 14px;
+    --fs-wu-carousel-item-title: 24px;
+    --fs-wu-carousel-item-text: 18px;
+    --fs-footer-title: 44px;
+    --fs-footer-subtitle: 24px;
+    --fs-footer-text: 18px;
+    --fs-lisence: 14px;
+    --fs-footer-play-icon: 13px;
+
+    --gap-nav-items: 10px 31px;
+    --gap-form-items: 16px;
+    --gap-wu-carousel-item-text: 0;
+    --gap-wu-imgset: 35px;
+    --gap-wu-text: 35px;
+    --gap-wu-carousel-item: 36px;
+    --gap-service-text: 40px;
+    --gap-service-services: 36px;
+    --gap-footer-text-block: 24px;
+    --gap-footer-text-inline: 24px;
+    --gap-lisence: 15px;
+
+    --underline-size-nav-item: 2px;
+    
+    --margin-nav-comp: 0;
+    --margin-nav-item-comp: 0 0 0 0;
+    --margin-nav-CTA-comp: 0 -1px 0 13px;
+    --margin-hero-info-text-comp: 12px 0 0px 2px;
+    --margin-form-input-items: 34px 0 41px;
+    --margin-form-select-comp: 0 0 0 0;
+    --margin-subtitle: 0 0 30px -1px;
+    --margin-wu-imgset: 0 auto 64px;
+    --margin-wu-text: 0 2px 0 0;
+    --margin-wu-text-comp: 0;
+    --margin-wu-carousel: 103px auto 0;
+    --margin-wu-carousel-item-text-comp: 16px 0;
+    --margin-wu-text-btn: 12px 0 0 0;
+    --margin-service-text: 0 0 38px 0;
+    --margin-footer-title: 0 0 49px 0;
+    --margin-footer-play-icon-comp: 0;
+    --margin-footer-text-inline-comp: 0 0 0 0;
+    --margin-footer-text-block-comp: -1px 0 0 0;
+    --margin-footer-play-icon-comp: -1px 0 0 5px;
+    --margin-footer-checkmark-1-comp: 7px 0 0 0;
+    --margin-footer-checkmark-2-comp: 7px 0 0 0;
+    --margin-footer-checkmark-3-comp: 9px 0 0 0;
+
+    --lh-hero-info-title: 72px;
+    --lh-hero-info-text: 24px;
+    --lh-text: 24px;
+    --lh-subtitle: 46px;
+    --lh-wu-carousel-item-title: 34px;
+    --lh-wu-carousel-item-text: 28px;
+    --lh-footer-title:52px;
+    --lh-footer-subtitle: 32px;
+    --lh-footer-text: 28px;
+    --lh-lisence: 24px;
+
+    --scale-footer-play-glow: 1.81;
+  }
+
+  .mobile,
+  .tablet{
+    display: none !important;
+  }
+
+  .desktop{
+    display: flex !important;
+  }
+}
